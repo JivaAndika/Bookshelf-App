@@ -14,7 +14,7 @@
       <h1 class="text-3xl font-bold">📚 Bookshelf App</h1>
     </header>
 
-    <main class="max-w-4xl mx-auto py-10 space-y-8">
+    <main class="max-w-4xl mx-auto py-10 px-4 sm:px-6 lg:px-8 space-y-8">
       <section class="bg-white p-6 rounded-lg shadow-lg text-gray-800">
         <h2 class="text-xl font-semibold mb-4">Tambah Buku Baru</h2>
         <form id="bookForm" class="space-y-4">
@@ -69,7 +69,10 @@
 
       <section class="bg-white p-6 rounded-lg shadow-lg text-gray-800">
         <h2 class="text-xl font-semibold mb-4">Cari Buku</h2>
-        <form id="searchBook" class="flex space-x-3">
+        <form
+          id="searchBook"
+          class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3"
+        >
           <input
             id="searchBookTitle"
             type="text"
@@ -88,12 +91,18 @@
 
       <section>
         <h2 class="text-2xl font-semibold mb-4">Belum Selesai Dibaca</h2>
-        <div id="incompleteBookList" class="grid gap-4 sm:grid-cols-2"></div>
+        <div
+          id="incompleteBookList"
+          class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+        ></div>
       </section>
 
       <section>
         <h2 class="text-2xl font-semibold mb-4">Selesai Dibaca</h2>
-        <div id="completeBookList" class="grid gap-4 sm:grid-cols-2"></div>
+        <div
+          id="completeBookList"
+          class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+        ></div>
       </section>
     </main>
   </body>
